@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>华为官网</title>
+		<style>
+			*{
+				margin: 0px;//去白边的
+				padding: 0px;
+				}
+			.header{
+				height: 100px;
+				background-color: #f7f7f7;}
+				.logs{
+					float: left;}
+					
+				.logs{
+					width:200px ;
+					height: 80px;
+					margin-left: 100px;
+					margin-top: 10px;外边距
+				}
+				.nav li{
+					float: left;
+					height: 50px;
+					line-height: 50px;
+					margin-left: 40px;
+					margin-top: 25px;
+				}
+				.nav{
+					float: left;
+					list-style-type:none;
+				.nav li a{
+					text-decoration: none;去掉下划线
+					color: #000000;
+					font-size: 25px;
+					}
+					.nav li a :hover:after{
+						content: "";
+						width: auto;
+						display: block;
+						height: 5px;
+						background-color: #000000;
+					}
+					.header>a{
+						height: 50px;
+						width: 150px;
+						border-radius: 25px;
+						border: 1px solid #cccccc;
+						text-decoration: none;
+						color: #000000;
+						font-size: 25px;
+						line-height: 50px;
+						text-align: center;
+						margin: 25px;
+					}
+					.header>a:hover{
+						border: 1px solid #000000
+					}
+					.banner{
+						height: 600px;
+						background-image: url(123.jpg);
+						background-size: 100%  100%;
+						}
+						.left,.right{
+							height:600px;
+							width:300px
+							background-clolr:rgba(0,0,0,4)
+						}
+						.clear{
+							clear: both;
+						}
+						.left::before{
+							float: left;
+							content: url(btns.png);
+							transform: rotate(-90deg);
+							margin-top: 260px;
+						}
+		</style>
+		
+		
+	</head>
+	<body>
+		<div class="header">
+			<img src="logo.svg" class="logs" />
+			<ul class="nav">
+				<li>
+					<a href="#">手机</a>
+				</li>
+				<li>
+				<a href="#">笔记本</a>
+				</li>
+				<li>
+					<a href="#">平板</a>
+				</li>
+			</ul>
+			</div>
+			<a href="#">华为商城</a>
+		<div class="clear"></div>
+		<div class="banner">
+			<a href="#" class="left"></a>
+			<a href="#" class="left"></a>
+			</div>
+	</body>
+</html>
